@@ -4,7 +4,7 @@ target/
 !**/src/main/**/target/
 !**/src/test/**/target/
 *.log
-!**/.mvn/
+
 ### STS ###
 .apt_generated
 .classpath
@@ -14,11 +14,10 @@ target/
 .springBeans
 .sts4-cache
 
-### IntelliJ IDEA ###
-.idea
-*.iws
-*.iml
-*.ipr
+.mvn/timing.properties
+.mvn/wrapper/maven-wrapper.jar
 
-
+# Eclipse m2e generated files
+# Eclipse Core
 .project
+
