@@ -11,7 +11,7 @@
 	<groupId>com.kaban-task</groupId>
 	<artifactId>manager</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<packaging>war</packaging>
+	<packaging>jar</packaging>
 	<name>manager</name>
 	<description>Backend for kanban app</description>
 	<properties>
@@ -66,7 +66,11 @@
 		    <artifactId>mapstruct-processor</artifactId>
 		    <version>1.4.2.Final</version>
 		</dependency>
-
+		<dependency>
+		    <groupId>com.github.ulisesbocchio</groupId>
+		    <artifactId>jasypt-spring-boot-starter</artifactId>
+		    <version>3.0.3</version>
+		</dependency>
 	</dependencies>
 
 	<build>
@@ -75,6 +79,11 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
+			<plugin>
+		    	<groupId>com.github.ulisesbocchio</groupId>
+		      	<artifactId>jasypt-maven-plugin</artifactId>
+		      	<version>3.0.3</version>
+		    </plugin>
 		</plugins>
 	</build>
 
