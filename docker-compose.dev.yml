@@ -21,8 +21,4 @@ services:
     env_file:
       - .env-mysql
     volumes:
-      - mysql_data:/var/lib/mysql
-      - mysql_config:/etc/mysql/conf.d
-volumes:
-  mysql_data:
-  mysql_config:
+      - ./kanban-task-manager-DB:/docker-entrypoint-initdb.d
